@@ -1,0 +1,27 @@
+main img {
+  height: 255px;
+  width: 255px;
+}
+@media screen and (min-width: 992px) {
+  main img {
+    height: 140px;
+    width: 140px;
+  }
+}
+main .title {
+  font-size: 4rem;
+}
+main input::-moz-placeholder {
+  color: white;
+}
+main input::placeholder {
+  color: white;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+.show-title {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=profile.css.map */
