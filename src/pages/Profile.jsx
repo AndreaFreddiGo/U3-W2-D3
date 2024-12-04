@@ -1,13 +1,9 @@
 import avatar from '../assets/images/my-avatar.jpg'
 import '../assets/styles/profile.css'
-import NetflixNavbar from '../components/NetflixNavbar'
 
 const Profile = () => {
   return (
     <div className="bg-darkest vh-100">
-      <header>
-        <NetflixNavbar />
-      </header>
       <main className="pt-5 pb-2 bg-darkest">
         <div>
           <div className="container">

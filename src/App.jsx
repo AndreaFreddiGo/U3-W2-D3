@@ -1,20 +1,28 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/styles/custom-bootstrap.css'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import NetflixNavbar from './components/NetflixNavbar'
+import TvShows from './pages/TvShows'
+import MovieDetails from './components/MovieDetails'
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
+      <header>
+        <NetflixNavbar />
+      </header>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Settings" element={<Settings />} />
+        <Route path="/TvShows" element={<TvShows />} />
+        <Route path="/MoiveDetails/:movieId" element={<MovieDetails />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 

@@ -1,6 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import NetflixFooter from '../components/NetflixFooter'
-import NetflixNavbar from '../components/NetflixNavbar'
 import NetflixMenu from '../components/NetflixMenu'
 import NetflixRow1 from '../components/NetflixRow1'
 import NetflixRow2 from '../components/NetflixRow2'
@@ -10,9 +9,6 @@ import '../assets/styles/homepage.css'
 const Homepage = () => {
   return (
     <div className=" bg-darkest">
-      <header>
-        <NetflixNavbar />
-      </header>
       <main>
         <Container>
           <NetflixMenu />

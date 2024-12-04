@@ -1,13 +1,9 @@
 import '../assets/styles/settings.css'
 import avatar from '../assets/images/my-avatar.jpg'
-import NetflixNavbar from '../components/NetflixNavbar'
 
 const Settings = () => {
   return (
     <div>
-      <header>
-        <NetflixNavbar />
-      </header>
       <main className="mt-5 py-5">
         <div className="container">
           <div className="row">

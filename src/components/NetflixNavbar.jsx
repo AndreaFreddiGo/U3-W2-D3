@@ -3,8 +3,11 @@ import avatar from '../assets/images/my-avatar.jpg'
 import kidsIcon from '../assets/images/kids_icon.png'
 import { Link } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
+import { useLocation } from 'react-router-dom'
 
 const NetflixNavbar = () => {
+  const location = useLocation()
+
   return (
     <div className="container">
       <div className="row">
@@ -38,9 +41,16 @@ const NetflixNavbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <Link
+                    to="/TvShows"
+                    className={
+                      location.pathname === '/TvShows'
+                        ? 'nav-link active'
+                        : 'nav-link'
+                    }
+                  >
                     TV Shows
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
