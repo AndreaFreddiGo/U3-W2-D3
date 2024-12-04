@@ -7,7 +7,7 @@ import Profile from './pages/Profile'
 import Settings from './pages/Settings'
 import NetflixNavbar from './components/NetflixNavbar'
 import TvShows from './pages/TvShows'
-import MovieDetails from './components/MovieDetails'
+import MovieDetails from './pages/MovieDetails'
 
 function App() {
   return (
