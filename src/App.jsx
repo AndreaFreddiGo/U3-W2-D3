@@ -20,7 +20,7 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Settings" element={<Settings />} />
         <Route path="/TvShows" element={<TvShows />} />
-        <Route path="/MoiveDetails/:movieId" element={<MovieDetails />} />
+        <Route path="/MovieDetails/:movieId" element={<MovieDetails />} />
       </Routes>
     </BrowserRouter>
   )
